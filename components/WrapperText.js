@@ -1,5 +1,5 @@
-const WrapperText =(props) =>{
-    const {children,nameClass} = props;
+const WrapperText = (props) => {
+    const {children, nameClass} = props;
 
     return <div className={nameClass}>
         {children}

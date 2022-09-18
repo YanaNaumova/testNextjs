@@ -4,13 +4,13 @@ import Popup from "reactjs-popup";
 
 
 const Modal = (props) => {
-    const {trigger,children }=props
+    const {trigger, children} = props
     return (
-            <WrapperContainer>
-                <Popup modal trigger={trigger}>
-                    {children}
-                </Popup>
-            </WrapperContainer>
+        <WrapperContainer>
+            <Popup modal trigger={trigger}>
+                {children}
+            </Popup>
+        </WrapperContainer>
     );
 };
 

@@ -15,15 +15,15 @@ const FAQsList = (props) => {
         <>
             <WrapperContainer nameClass={styles.faqsRightHeaderContainer}>
                 <WrapperContainer nameClass={styles.faqsWrapper}>
-                <Header nameClass={styles.faqsRightHeader}>
-                    {headerText}
-                </Header>
-            </WrapperContainer>
-            <WrapperImage nameClass={styles.faqsBtn}>
-                <Image src={photoName} width={28} height={28} onClick={() => {
-                    isShow === true ? setIsShow(false) : setIsShow(true)
-                }}/>
-            </WrapperImage>
+                    <Header nameClass={styles.faqsRightHeader}>
+                        {headerText}
+                    </Header>
+                </WrapperContainer>
+                <WrapperImage nameClass={styles.faqsBtn}>
+                    <Image src={photoName} width={28} height={28} alt="faQsList" onClick={() => {
+                        isShow === true ? setIsShow(false) : setIsShow(true)
+                    }}/>
+                </WrapperImage>
             </WrapperContainer>
             {isShow === true ?
                 (

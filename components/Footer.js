@@ -31,18 +31,19 @@ const Footer = () => {
                     </Header>
                     <WrapperContainer nameClass={styles.imageContainer}>
                         <WrapperImage nameClass={styles.icon}>
-                            <a href="https://mobile.twitter.com/World_Wildlife" target={"_blank"}>
-                                <Image src="/Twitter.svg" width={22} height={22}/>
+                            <a href="https://mobile.twitter.com/World_Wildlife" target={"_blank"} rel="noreferrer">
+                                <Image src="/Twitter.svg" width={22} height={22} alt="twitter"/>
                             </a>
                         </WrapperImage>
                         <WrapperImage>
-                            <a href="https://www.facebook.com/WWF/" target={"_blank"}>
-                                <Image src="/Facebook.svg" width={22} height={22}/>
+                            <a href="https://www.facebook.com/WWF/" target={"_blank"} rel="noreferrer">
+                                <Image src="/Facebook.svg" width={22} height={22} alt="facebook"/>
                             </a>
                         </WrapperImage>
                         <WrapperImage>
-                            <a href="https://www.linkedin.com/company/wwf-international/" target={"_blank"}>
-                                <Image src="/LinkedIn.svg" width={22} height={22}/>
+                            <a href="https://www.linkedin.com/company/wwf-international/" target={"_blank"}
+                               rel="noreferrer">
+                                <Image src="/LinkedIn.svg" width={22} height={22} alt="linkedin"/>
                             </a>
                         </WrapperImage>
                     </WrapperContainer>

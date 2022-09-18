@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import Slider from 'react-slick'
 import {FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
@@ -16,7 +16,7 @@ const SlidersBottom = () => {
     const [sliderIndex, setSliderIndex] = useState(0)
     const [slidesShow, setSlidesShow] = useState(5)
     useEffect(() => {
-       const width= (window.screen.width < 700) ? 1 : 5
+        const width = (window.screen.width < 700) ? 1 : 5
         setSlidesShow(width)
     }, [])
 
@@ -108,11 +108,11 @@ const SlidersBottom = () => {
                                     <div key={index} className={styles.cardShow}>
                                         <WrapperContainer nameClass={styles.cardImageShowWrap}>
                                             <WrapperImage nameClass={styles.cardImageShow}>
-                                                <Image src={card.imageSrc} width={694} height={358}/>
+                                                <Image src={card.imageSrc} width={694} height={358} alt="slider"/>
                                             </WrapperImage>
                                         </WrapperContainer>
                                         <WrapperImage nameClass={styles.cardImageShowForText}>
-                                            <Image src={"/Frame 3.svg"} width={305} height={255}/>
+                                            <Image src={"/Frame 3.svg"} width={305} height={255} alt="slider"/>
                                         </WrapperImage>
                                         <Header nameClass={styles.cardHeaderShow}>
                                             {card.title}
@@ -128,7 +128,7 @@ const SlidersBottom = () => {
                                 <div className={styles.slidNext}>
                                     <div key={index} className={styles.card}>
                                         <WrapperImage nameClass={styles.cardImage}>
-                                            <Image src={card.imageSrc} width={694} height={358}/>
+                                            <Image src={card.imageSrc} width={694} height={358} alt="slider"/>
                                         </WrapperImage>
                                         <Header nameClass={styles.cardHeader}>
                                             {card.title}

@@ -18,14 +18,17 @@ const FAQs = () => {
                     it is easy to asso- ciate it with a geometric
                     patterned wallpaper or colourful prints on interior fabrics.
                 </WrapperText>
-                    <Modal trigger={<button>Contact us</button>}>
-                        {close => <ContactUs close={close}/>}
-                    </Modal>
+                <Modal trigger={<button>Contact us</button>}>
+                    {close => <ContactUs close={close}/>}
+                </Modal>
             </WrapperContainer>
             <WrapperContainer nameClass={styles.rightContainer}>
-           <FAQsList headerText={"What can I do to protect our planet?"} text={"Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources"}/>
-           <FAQsList headerText={"How to save nature ecology?"} text={"Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources"}/>
-           <FAQsList headerText={"What is nature conservation?"} text={"Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources"}/>
+                <FAQsList headerText={"What can I do to protect our planet?"}
+                          text={"Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources"}/>
+                <FAQsList headerText={"How to save nature ecology?"}
+                          text={"Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources"}/>
+                <FAQsList headerText={"What is nature conservation?"}
+                          text={"Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources"}/>
             </WrapperContainer>
         </WrapperContainer>
     )

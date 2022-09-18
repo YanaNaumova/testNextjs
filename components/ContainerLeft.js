@@ -8,11 +8,11 @@ import InputSearch from "./InputSearch"
 
 const ContainerLeft = () => {
     return (
-        <WrapperContainer nameClass ={style.containerSide}>
+        <WrapperContainer nameClass={style.containerSide}>
             <WrapperImage nameClass={styles.nature}>
-                <Image src="/Headline.svg" width={385} height={210}/>
+                <Image src="/Headline.svg" width={385} height={210} alt="nature"/>
             </WrapperImage>
-            <WrapperText nameClass = {styles.containerText}>
+            <WrapperText nameClass={styles.containerText}>
                 The scale of the challenges facing our planet can seem daunting, but we can all do something.
             </WrapperText>
             <InputSearch/>

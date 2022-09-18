@@ -18,14 +18,14 @@ const BurgerMenu = () => {
                     <>
                         <WrapperContainer nameClass={styles.header}>
                             <WrapperImage nameClass={styles.logo}>
-                                <Image src="/Logo.svg" width={100} height={30}/>
+                                <Image src="/Logo.svg" width={100} height={30} alt="Logo"/>
                             </WrapperImage>
                             <div className={styles.menuBtn} onClick={() => {
                                 setIsOpen(isOpen === false)
                             }}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                <span/>
+                                <span/>
+                                <span/>
                             </div>
                         </WrapperContainer>
                         <Line/>
@@ -34,7 +34,7 @@ const BurgerMenu = () => {
                     <>
                         <WrapperContainer nameClass={styles.headerBurgerMenu}>
                             <WrapperImage nameClass={styles.logo}>
-                                <Image src="/Logo.svg" width={100} height={30}/>
+                                <Image src="/Logo.svg" width={100} height={30} alt="Logo"/>
                             </WrapperImage>
                             <button onClick={() => {
                                 setIsOpen(isOpen !== true)

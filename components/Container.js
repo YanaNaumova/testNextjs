@@ -10,9 +10,9 @@ const Container = (props) => {
 
     return <div id="home" className={styles.container}>
         {children}
-        <WrapperContainer nameClass ={styles.wrapperContainer}>
-        <ContainerLeft/>
-        <ContainerRight/>
+        <WrapperContainer nameClass={styles.wrapperContainer}>
+            <ContainerLeft/>
+            <ContainerRight/>
         </WrapperContainer>
     </div>
 }

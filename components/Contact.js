@@ -19,17 +19,17 @@ const Contact = () => {
                     Get started today!
                 </Header>
                 <WrapperText nameClass={styles.leftText}>
-                    text
+                    {text}
                 </WrapperText>
             </WrapperContainer>
 
             <WrapperContainer nameClass={styles.rightContainer}>
                 <WrapperContainer nameClass={styles.containerLogin}>
                     <WrapperImage nameClass={styles.firstPetal}>
-                        <Image src="/Vector (15).svg" width={51} height={31}/>
+                        <Image src="/Vector (15).svg" width={51} height={31} alt="Petal"/>
                     </WrapperImage>
                     <WrapperImage nameClass={styles.secondPetal}>
-                        <Image src="/Vector (16).svg" width={28} height={14}/>
+                        <Image src="/Vector (16).svg" width={28} height={14} alt="Petal"/>
                     </WrapperImage>
                     <Header nameClass={styles.rightHeader}>
                         Log in

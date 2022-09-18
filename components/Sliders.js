@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import Slider from 'react-slick'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import {FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -10,7 +10,7 @@ import WrapperText from "./WrapperText";
 import Header from "./Header";
 import Image from "next/image";
 
-const Sliders=()=>{
+const Sliders = () => {
     const [sliderRef, setSliderRef] = useState(null)
 
     const sliderSettings = {
@@ -26,47 +26,46 @@ const Sliders=()=>{
             title: 'Travel In Japan: The True Experience1',
             description: 'When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric patterned wallpaper or colourful prints on interior fabrics.',
         },
-         {
-           imageSrc:
-               '/Slider.svg',
-            title: 'Travel In Japan: The True Experience2',
-            description: 'When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric patterned wallpaper or colourful prints on interior fabrics.',
-         },
-         {
+        {
             imageSrc:
                 '/Slider.svg',
-             title: 'Travel In Japan: The True Experience3',
-             description: 'When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric patterned wallpaper or colourful prints on interior fabrics.',
-         }
-
+            title: 'Travel In Japan: The True Experience2',
+            description: 'When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric patterned wallpaper or colourful prints on interior fabrics.',
+        },
+        {
+            imageSrc:
+                '/Slider.svg',
+            title: 'Travel In Japan: The True Experience3',
+            description: 'When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric patterned wallpaper or colourful prints on interior fabrics.',
+        }
     ]
 
     return (
         <div className={styles.content}>
-                <div className={styles.controlPr}>
+            <div className={styles.controlPr}>
                 <button onClick={sliderRef?.slickPrev}>
-                    <FaChevronLeft />
+                    <FaChevronLeft/>
                 </button>
-                </div>
-                <div className={styles.controlNext}>
+            </div>
+            <div className={styles.controlNext}>
                 <button onClick={sliderRef?.slickNext}>
-                    <FaChevronRight />
+                    <FaChevronRight/>
                 </button>
-                </div>
+            </div>
             <Slider ref={setSliderRef} {...sliderSettings} className={styles.slider}>
                 {hotelCards.map((card, index) => (
-                   <div className={styles.slid}>
-                    <div key={index} className={styles.card}>
-                        <WrapperImage nameClass={styles.cardImage}>
-                            <Image src={card.imageSrc} width={694} height={358}/>
-                        </WrapperImage>
-                        <Header nameClass={styles.cardHeader}>
-                            {card.title}
-                        </Header>
-                        <WrapperText nameClass={styles.textInfo}>
-                            {card.description}
-                        </WrapperText>
-                    </div>
+                    <div key={index + "index"} className={styles.slidNext}>
+                        <div key={index} className={styles.card}>
+                            <WrapperImage nameClass={styles.cardImage}>
+                                <Image src={card.imageSrc} width={694} height={358} alt="slider"/>
+                            </WrapperImage>
+                            <Header nameClass={styles.cardHeaderShow}>
+                                {card.title}
+                            </Header>
+                            <WrapperText nameClass={styles.textInfo}>
+                                {card.description}
+                            </WrapperText>
+                        </div>
                     </div>
                 ))}
             </Slider>

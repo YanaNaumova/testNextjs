@@ -19,8 +19,8 @@ const NavBar = () => {
         navbarShow === true ? (
                 <WrapperContainer>
                     <WrapperContainer nameClass={styles.groot}>
-                        <WrapperImage nameClass ={styles.logo}>
-                            <Image src="/Logo.svg" width={100} height={30}/>
+                        <WrapperImage nameClass={styles.logo}>
+                            <Image src="/Logo.svg" width={100} height={30} alt='logo'/>
                         </WrapperImage>
                         <nav className={styles.navBar}>
                             <a href='#home'>Home</a>
