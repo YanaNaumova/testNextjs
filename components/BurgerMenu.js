@@ -45,10 +45,10 @@ const BurgerMenu = () => {
                         <div className={className}>
                             <nav>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Our mission</a></li>
-                                    <li><a href="#">Places</a></li>
-                                    <li><a href="#">Places</a></li>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#mission">Our mission</a></li>
+                                    <li><a href="#places">Places</a></li>
+                                    <li><a href="#team">Team</a></li>
                                 </ul>
                                 <Modal trigger={<button>Apply</button>}>
                                     {close => <Apply close={close}/>}

@@ -82,12 +82,12 @@ const SlidersBottom = () => {
                     <FaChevronLeft/>
                 </button>
             </div>
-            {/*<WrapperText nameClass={styles.buttonText}>*/}
-            {/*    {sliderIndex+1}*/}
-            {/*</WrapperText>*/}
-            {/*<WrapperText nameClass={styles.buttonLastPageText}>*/}
-            {/*    / {natureCards.length}*/}
-            {/*</WrapperText>*/}
+            <WrapperText nameClass={styles.buttonText}>
+                {sliderIndex+1}
+            </WrapperText>
+            <WrapperText nameClass={styles.buttonLastPageText}>
+                / {natureCards.length}
+            </WrapperText>
             <div className={styles.controlNext}>
                 <button onClick={() => {
                     (sliderIndex > natureCards.length - 2 || sliderIndex < 0) ?

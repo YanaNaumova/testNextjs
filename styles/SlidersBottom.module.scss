@@ -163,7 +163,7 @@
   color: #000000;
   position: absolute;
   top: 82%;
-  transform: translate(3900%);
+  left: 47%;
   z-index: 1;
 }
 
@@ -172,16 +172,8 @@
   opacity: 20%;
   position: absolute;
   top: 82%;
-  transform: translate(3900%);
+  transform: translate(2620%);
   z-index: 1;
-}
-
-.wrapperNumbers {
- // display: flex;
-}
-
-.wrapperButton {
-//display: flex;
 }
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
@@ -195,5 +187,13 @@
 
   .content {
     height: 100%;
+  }
+
+  .buttonText {
+    left: 43%;
+  }
+
+  .buttonLastPageText {
+    transform: translate(920%);
   }
 }
