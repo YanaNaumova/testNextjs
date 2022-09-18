@@ -176,7 +176,7 @@
   z-index: 1;
 }
 
-@media (min-device-width: 320px) and (max-device-width: 896px) {
+@media (min-device-width: 320px) and (max-device-width: 598px) {
   .controlPr {
     left: 33%;
   }
@@ -195,5 +195,31 @@
 
   .buttonLastPageText {
     transform: translate(920%);
+  }
+}
+
+@media (min-device-width: 598px) and (max-device-width: 896px) {
+  .controlPr {
+    left: 33%;
+  }
+
+  .controlNext {
+    right: 33%;
+  }
+
+  .content {
+    height: 100%;
+  }
+
+  .buttonText {
+    left: 46%;
+  }
+
+  .buttonLastPageText {
+    transform: translate(2320%);
+  }
+
+  .leftContainer {
+    padding: 0 0 0 110px;
   }
 }
