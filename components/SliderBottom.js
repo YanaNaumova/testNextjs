@@ -16,7 +16,7 @@ const SlidersBottom = () => {
     const [sliderIndex, setSliderIndex] = useState(0)
     const [slidesShow, setSlidesShow] = useState(5)
     useEffect(() => {
-        const width = (window.screen.width < 700) ? 1 : 5
+        const width = (window.screen.width < 896) ? 1 : 5
         setSlidesShow(width)
     }, [])
 

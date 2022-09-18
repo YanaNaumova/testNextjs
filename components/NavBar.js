@@ -11,7 +11,7 @@ import WrapperContainer from "./WrapperContainer";
 const NavBar = () => {
     const [navbarShow, setNavbarShow] = useState(true);
     useEffect(() => {
-        const width = (window.screen.width > 700)
+        const width = (window.screen.width > 896)
         setNavbarShow(width)
     }, [])
 
