@@ -1,0 +1,45 @@
+.faqsRightHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faqsRightHeader {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #1E1A20;
+}
+
+.faqsBtnOpen {
+  display: flex;
+}
+
+.faqsBtn {
+  display: flex;
+}
+
+
+.faqsRightText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #1E1A20;
+}
+
+.faqsWrapper {
+  display: flex;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .faqsRightHeader {
+    margin: 0;
+  }
+
+  .faqsWrapper {
+    flex-direction: column;
+  }
+}

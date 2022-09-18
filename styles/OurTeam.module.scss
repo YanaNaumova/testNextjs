@@ -1,0 +1,119 @@
+.ourTeamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+
+.ourTeamHead {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #222433;
+}
+
+.ourTeamText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #1E1A20;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  max-width: 270px;
+}
+
+.photoContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 160px;
+  max-width: 1200px;
+}
+
+.photoLeft {
+  position: absolute;
+  top: 0;
+  left: 7%;
+  z-index: 1;
+}
+
+.photoRight {
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  top: 0;
+}
+
+.photoCenter {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: rotate(28deg);
+  left: 38%;
+}
+
+.photoVectorRight {
+  top: 65%;
+  position: absolute;
+  right: 20%;
+}
+
+.photoVectorLeft {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .ourTeamContainer {
+    margin: 150px 0 0 0;
+  }
+
+  .ourTeamHead {
+    margin: 35px 0 15px 0;
+  }
+
+  .ourTeamText {
+    line-height: 25px;
+    margin: 0 0 25px 0;
+  }
+
+  .photoLeft {
+    transform: translate(0%);
+  }
+
+  .photoContainer {
+    flex-direction: column;
+    height: 800px;
+  }
+
+  .photoRight {
+    top: 57%;
+    left: 8%;
+  }
+
+  .photoCenter {
+    left: 28%;
+    top: 28%
+  }
+
+  .photoVectorLeft {
+    top: 16%;
+    right: -18%;
+    transform: rotate(45deg);
+  }
+
+  .photoVectorRight {
+    top: 45%;
+    left: -7%;
+    transform: rotate(124deg);
+  }
+}
+

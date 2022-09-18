@@ -1,0 +1,144 @@
+.leftHeader {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #222433;
+  margin: 0 0 10px 0;
+}
+
+.leftText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1E1A20;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+.contactContainer {
+  display: flex;
+  background: #FFBD9E;
+  border-radius: 20px;
+  width: 80%;
+  min-height: 400px;
+  margin: 100px 0 100px 0;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    background: #F2726C;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 25px;
+    width: 70%;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  input {
+    background: #FFFFFF;
+    border-radius: 40px;
+    border: none;
+    height: 25px;
+    width: 70%;
+    justify-content: center;
+
+    &::placeholder {
+      padding: 0 0 0 10px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      color: #807C7C;
+    }
+  }
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  padding: 10%;
+}
+
+.rightContainer {
+  width: 50%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightHeader {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  text-transform: capitalize;
+  color: #222433;
+}
+
+.firstPetal {
+  display: flex;
+  position: absolute;
+  transform: translate(286%);
+  top: -5%;
+}
+
+.secondPetal {
+  display: flex;
+  position: absolute;
+  transform: translate(570%);
+  top: 12%;
+
+}
+
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  background: #F7F3F4;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: space-around;
+  width: 315px;
+  height: 275px;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .contactContainer {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .leftContainer {
+    width: 100%;
+  }
+
+  .rightContainer {
+    width: 100%;
+  }
+
+  .containerLogin {
+    margin: 0 0 38px 0;
+  }
+}
+
+

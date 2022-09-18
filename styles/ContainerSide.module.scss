@@ -1,0 +1,16 @@
+.containerSide {
+  width: 50%;
+  padding: 0 0 0 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .containerSide {
+    width: 100%;
+    padding: 0;
+  }
+}
+

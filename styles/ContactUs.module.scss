@@ -1,0 +1,67 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  position: absolute;
+  transform: translate(-50%);
+
+  button {
+    font-family: 'Poppins';
+    background: #F2726C;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    width: 30%;
+    height: 25px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+}
+
+.containerContacts {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: space-around;
+  width: 315px;
+  height: 275px;
+  background: #FFBD9E;
+
+  textarea {
+    border: none;
+    color: #807C7C;
+  }
+}
+
+.header {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  text-transform: capitalize;
+  color: #222433;
+  text-align: center;
+}
+
+.contactText {
+  line-height: 25px;
+  font-size: 13px;
+  margin: 0 45px;
+}
+
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .modal {
+    transform: translate(-64%);
+  }
+}

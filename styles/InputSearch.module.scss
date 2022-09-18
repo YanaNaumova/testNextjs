@@ -1,0 +1,55 @@
+.inputSearch {
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 50px;
+  button {
+    background-color: #F2726C;
+    border-radius: 30px;
+    width: 30%;
+    color: white;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+  }
+
+  input{
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 30px 40px rgba(240, 101, 126, 0.05);
+    border-radius: 40px;
+    border: none;
+    padding: 0 40px;
+    &::placeholder{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .image {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .inputSearch {
+    width: 90%;
+    }
+}

@@ -1,0 +1,41 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+
+  a {
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+.groot {
+  padding: 10px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    background: #FFFFFF;
+    border-radius: 40px;
+    border: none;
+    padding: 8px 25px;
+    font-weight: bold;
+  }
+
+  .logo{
+    :hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.content {
+  max-width: 1500px;
+  width: 100%;
+  position: relative;
+  background: #FFBD9E;
+  height: 458px;
+  margin: 100px 0 0 0;
+}
+
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+
+.cardHeaderShow {
+  color: #1E1A20;
+  font-size: 16px;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  top: 45%;
+  transform: translate(26%);
+}
+
+.cardHeader {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  top: 45%;
+  transform: translate(90%);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+.cardImage {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.controlPr {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 43%;
+}
+
+.controlNext {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  z-index: 1;
+  right: 43%;
+}
+
+.controlPr button,
+.controlNext button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out;
+}
+
+.controlPr button:hover,
+.controlNext button:hover,
+{
+  background-color: transparent;
+}
+
+.controlPr button:nth-child(1),
+.controlNext button:nth-child(1) {
+  margin-right: 2rem;
+}
+
+.slider {
+  .slidShow {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.slidShow {
+  .slidNext {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cardShow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+
+.cardImageShowWrap {
+  width: 200px;
+  height: 260px;
+  position: relative;
+}
+
+.cardImageShowForText {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.cardImageShow {
+  width: 100%;
+  max-width: 100%;
+  //object-fit: cover;
+  z-index: 2;
+  position: absolute;
+  transform: translate(-40px);
+}
+
+.textInfoShow {
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+  position: absolute;
+  top: 47%;
+  font-size: 10px;
+  z-index: 1;
+
+}
+
+.wrapper {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+
+.buttonText {
+  color: #000000;
+  position: absolute;
+  top: 82%;
+  transform: translate(3900%);
+  z-index: 1;
+}
+
+.buttonLastPageText {
+  color: #000000;
+  opacity: 20%;
+  position: absolute;
+  top: 82%;
+  transform: translate(3900%);
+  z-index: 1;
+}
+
+.wrapperNumbers {
+ // display: flex;
+}
+
+.wrapperButton {
+//display: flex;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .controlPr {
+    left: 33%;
+  }
+
+  .controlNext {
+    right: 33%;
+  }
+
+  .content {
+    height: 100%;
+  }
+}

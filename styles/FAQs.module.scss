@@ -1,0 +1,88 @@
+.faqsLeftHeader {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #222433;
+}
+
+.faqsLeftText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1E1A20;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+.faqsContainer {
+  display: flex;
+  width: 80%;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  padding: 0 10% 0 0;
+
+  button {
+    font-family: 'Poppins';
+    background: #F2726C;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    width: 30%;
+    height: 25px;
+    justify-content: center;
+  }
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+
+  hr {
+    opacity: 0.2;
+    border: 1px solid #1E1A20;
+    width: 100%;
+  }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+  .faqsContainer {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    margin: 20px 0 0 0;
+  }
+
+  .rightContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .leftContainer {
+    width: 100%;
+    padding: 0;
+
+    button {
+      margin: 25px 0;
+    }
+  }
+}
+
+

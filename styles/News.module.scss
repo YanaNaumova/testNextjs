@@ -1,0 +1,49 @@
+.newsImage {
+
+}
+
+.newsText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.newsLink {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #807C7C;
+}
+
+.newsHashtag {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.newsWrapper {
+  display: flex;
+  padding-top: 40px;
+  width: 30%;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left:24px;
+}
+.newsContainer {
+  display:flex;
+  justify-content: center;
+  width: 100%;
+}
