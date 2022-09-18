@@ -20,7 +20,7 @@
 }
 
 .rectangle {
- position: absolute;
+  position: absolute;
   bottom: -200px;
   z-index: 2;
   width: 198px;
@@ -95,31 +95,29 @@
   }
 
   .parrot {
-    top: -1561px;
+    top: -2075px;
     width: 320px;
     left: -135px;
   }
 
   .rectangle {
-    top: -2830px;
     width: 315px;
     left: -130px;
-
+    top: -2680px;
   }
 
   .avatar {
-    transform: translate(-255%);
-    top: -2810px;
-
+    transform: translate(-310%);
+    top: -2664px;
   }
 
   .members {
     transform: translate(-130%);
-    top: -2700px;
+    top: -2545px;
   }
 
   .quantity {
     transform: translate(-88%);
-    top: -2675px;
+    top: -2518px;
   }
 }

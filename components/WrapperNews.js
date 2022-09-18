@@ -7,7 +7,7 @@ const WrapperNews = (props) => {
     const {imageSrc, imageWidth, imageHeight, textHashtag, textNews, newsLink} = props
     return (
         <div className={styles.newsWrapper}>
-            <WrapperImage nameClass={styles.newsImage}>
+            <WrapperImage>
                 <Image src={imageSrc} width={imageWidth} height={imageHeight} alt="news"/>
             </WrapperImage>
             <div className={styles.news}>
